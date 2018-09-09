@@ -1,7 +1,0 @@
-Como terminar despues de mandar el error
-
-Aunque tenga como prioridad las palabras recerbadas, de cualqier forma 
-manda primero el identificador, solo reacciona con el if.
-
-Al terminar de identar, si el codig/target/
-o ya se termina, no puedo deidentar 
