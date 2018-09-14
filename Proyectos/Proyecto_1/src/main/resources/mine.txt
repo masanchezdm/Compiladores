@@ -5,3 +5,9 @@ manda primero el identificador, solo reacciona con el if.
 
 Al terminar de identar, si el codig/target/
 o ya se termina, no puedo deidentar 
+
+Reservado  ENTERO  OPERADOR  ENTERO SEPARADOR SALTO 
+INDENTA(4) OPERADOR  ENTERO  OPERADOR  ENTERO SALTO 
+IDENTIFICADOR  IDENTIFICADOR SALTO 
+errorIDENTIFICADOR SEPARADOR SALTO 
+ OPERADOR  ENTERO 
