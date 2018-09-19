@@ -1,0 +1,41 @@
+
+gramática 1 en EBNF:
+<expr> : {<expr> (+|-)} <term>
+<term> : {<term> (*|/)} <factor>
+<factor> : [-] NUMBER
+
+gramática 1 en BNF:
+<expr> : <expr> "+" <term>
+       | <expr> "-" <term>
+       | <term>
+       ;
+
+<term> : <term> "*" <factor>
+       | <term> "/" <factor>
+       | <factor>
+       ;
+
+<factor> : NUMBER
+         | "-" NUMBER
+         ;
+
+
+gramática 2 en EBNF:
+<expr> : <term> {("+"|"-") <expr>}
+<term> : <factor> {("*"|"/") <term>}
+<factor> : ["-"] NUMBER
+
+gramática 2 en BNF:
+<expr> : <term> "+" <expr>
+       | <term> "-" <expr>
+       | <term>
+       ;
+
+<term> : <factor> "*" <term>
+       | <factor> "/" <term>
+       | <factor>
+       ;
+
+<factor> : NUMBER
+         | "-" NUMBER
+         ;
